@@ -1,4 +1,9 @@
-<?php require_once('reni.php');?>
+<?php require_once('reni.php');
+   
+    
+  
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -160,6 +165,12 @@
     <!--section contact--->
     <section class="contact" id="Contact">
         <div class="cont">Contact</div>
+
+        <center><div class="alert alert-warning alert-dismissible fade show" role="alert">
+       <strong><?php echo "Message sent successfully"?></strong>
+       </div>
+       </center>
+
         <div class="form">
             <form action="" method="post">
                 <table>
@@ -191,13 +202,13 @@
             </div>
             </form>
         </div>
-<div class="cop" >Designed by &copy Renick Riziki</div>
-<br>
 
-    </section>
+</section>
 
-<script src="reniportfoli.js"></script>
 </body>
+<script src="reniportfoli.js"></script>
+
+
 </html>
 
 

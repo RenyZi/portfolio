@@ -45,10 +45,13 @@ use PHPMailer\PHPMailer\SMTP;
             $mail->AltBody = $message;
             
             $mail->Send();
+            if($email->Send()){
+                return;
+            }
 
-            echo "Your Message has been sent successfully";
+            
             }catch(Exception $e){
-                echo "Email not sent. ".$e;
+                echo $e;
             }
 
 
