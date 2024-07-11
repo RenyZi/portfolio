@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nunito';
+    
+}
+body,html{
+    background-color: var(--background);
+    font-family: 'nunito';
+}
+
+:root{
+    --text-color: whitesmoke;
+    --background: #1D212B;
+    --hoover: rgb(233, 98, 120);
+    --shad: whitesmoke;
+}
+#protpliobrand{
+    font-size: 2rem;
+}
+#port{
+    color: var(--hoover);
+}
+#links li > a{
+    position: relative;
+    overflow: hidden;
+    padding: 2px;
+    border-radius: 5px;
+    margin-left: 10px;
+    z-index: 1;
+    
+}
+#links li > a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--hoover);  
+    transition: all .54s ease-in-out; 
+    z-index: -1;
+}
+#links li > a:hover::after{
+    width: 100%;
+}
+
+/*section home*/
+
+.home{
+    background-image: url(images/RenifinalPortfoliopic.png);
+    background-repeat: no-repeat no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 100px 400px 5000px rgba(0, 0, 0, 0.4), inset -50px -150px 5000px rgba(0, 0, 0, 1);
+    
+    padding-top: 11%;
+    
+
+    
+}
+.content{
+    max-width: 600px;
+    background-color: transparent;
+    
+}
+.content h3{
+    margin-bottom: 10px;
+}
+
+ .content h1 > span{
+    color: var(--hoover);
+    font-size: 2rem;
+}
+
+ .content h2{
+   margin-top: 10px;
+   font-size: 3rem;
+}
+ .content #home-content{
+    margin-top: 15px;
+    text-align: justify;
+}
+
+
+#cv-download{
+    color: whitesmoke;
+    position: relative;
+    z-index: 1;
+    padding: 3px 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    margin-right: 20px;
+    background-color: transparent;
+    font-weight: bolder;
+}
+ #cv-download:hover{
+    border: none;
+    outline: none;
+}
+#cv-download::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--hoover);
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.54s ease-in-out;
+}
+ #cv-download:hover::after{
+    width: 100%;     
+}
+#lchart{
+    color: whitesmoke;
+    position: relative;
+    z-index: 1;
+    padding: 3px 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bolder;
+}
+ #lchart:hover{
+    border: none;
+    outline: none;
+}
+#lchart::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--hoover);
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.54s ease-in-out;
+}
+ #lchart:hover::after{
+    width: 100%;     
+}
+
+hr{
+    
+    height: 5px;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+/*section about*/
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 200px 50px 1500px rgba(0, 0, 0, 0.7),inset -200px -50px 1500px rgba(0, 0, 0, 0.4);
+    color: var(--text-color);
+}
+.about{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    
+}
+.imag{ 
+    padding: 0;
+    margin-top: 20px;
+    max-width: max-content;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid var(--hoover);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+}
+.imag::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(14, 13, 13, 0.2);
+    width: 0;
+    height: 100%;
+    transition: all 1.2s ease-in-out;
+}
+.imag:hover:after{
+   width: 100%;
+}
+.imag img{
+    width: 240px;      
+}
+.abt-cont{
+    margin-top: 20px;
+    width: 80%;
+    max-width: 80ch;
+    text-align: center;
+    margin-bottom: 20px;
+    border-left: 2px solid var(--text-color);
+    border-right: 2px solid var(--text-color);
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 20px;
+    
+}
+
+/*Education section*/
+.Education{
+    box-shadow: inset 300px 0px 1200px rgba(0, 0, 0, 0.6),inset -300px -200px 1200px rgba(0, 0, 0, 0.3);
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+.Education .head-edu{
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    
+}
+
+ .educate{
+    text-align: justify;
+    padding: 0 20px;
+    
+}
+ .educate h2{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    text-decoration: underline;
+}
+ .educate h3{
+    text-align: center;
+    padding-bottom: 10px;
+}
+#high{
+    color: var(--hoover);
+    font-size: 1.3rem;
+    text-transform: capitalize;
+
+}
+#skool{
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+#acmp{
+    text-transform: capitalize;
+    color: var(--hoover);
+    font-weight: bolder;
+}
+
+/*services section*/
+.services{
+    box-shadow: inset 300px 100px 5000px rgba(0, 0, 0, 0.3), inset -10px -10px 5000px rgba(0, 0, 0, 1);
+    background-color: var(--background);
+    color: var(--text-color);
+    
+    
+    
+}
+.services .service{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.services .frontend{
+    border: 2px solid var(--hoover);
+    border-radius: 20px;
+  
+}
+.services .dis{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+}
+.services .dis .html{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 5px;
+
+
+}
+.services .dis .html #html{
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+.services .dis .html #html::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--hoover);
+    width: 0;
+    height: 100%;
+    transition: all 0.76s ease-in-out;
+    z-index: 2;
+    
+}
+
+.services .dis .html #html:hover::after{
+    width: 95%;
+}
+#txt-htm{
+    position: absolute;
+    right: 5%;
+    z-index: 6;
+    font-weight: bolder;
+    
+}
+.services .dis .CSS{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 5px;
+}
+.services .dis .CSS #css{
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.services .dis .CSS #css::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--hoover);
+    width: 0;
+    height: 100%;
+    transition: all 0.76s ease-in-out;
+    z-index: 2;
+}
+.services .dis .CSS #css:hover::after{
+    width: 90%;
+}
+#txt-cs{
+    position: absolute;
+    right: 10%;
+    z-index: 6;
+    font-weight: bolder;
+    z-index: 6;
+    
+}
+
+.services .dis .script{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 5px;
+}
+.services .dis .script #javascript{
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.services .dis .script #javascript::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--hoover);
+    width: 0;
+    height: 100%;
+    transition: all 0.76s ease-in-out;
+    z-index: 2;
+}
+.services .dis .script #javascript:hover::after{
+    width: 80%;
+}
+#txt-js{
+    position: absolute;
+    right: 20%;
+    z-index: 6;
+    font-weight: bolder;
+    z-index: 6;
+
+    
+}
+
+
+.services .backend{
+    border: 2px solid var(--hoover);
+    border-radius: 20px;
+}
+.head{
+    max-width: fit-content;
+    text-align: center;
+    margin: 20px auto;
+    text-decoration: underline;
+}
+.services .backend .dised{
+    margin: 20px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.services .backend .dised .php{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 5px;
+
+}
+.services .backend .dised #php{
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.services .backend .dised #php::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--hoover);
+    width: 0;
+    height: 100%;
+    transition: all 0.76s ease-in-out;
+    z-index: 2;
+}
+.services .backend .dised #php:hover::after{
+    width: 80%;
+}
+#txt-be{
+    position: absolute;
+    right: 20%;
+    z-index: 6;
+    font-weight: bolder;
+    z-index: 6;
+    
+}
+
+
+.services .backend .dised .sql{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 5px;
+
+}
+.services .backend .dised #sql{
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.services .backend .dised #sql::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--hoover);
+    width: 0;
+    height: 100%;
+    transition: all 0.76s ease-in-out;
+    z-index: 2;
+}
+.services .backend .dised #sql:hover::after{
+    width: 83%;
+}
+#txt-sq{
+    position: absolute;
+    right: 17%;
+    z-index: 6;
+    font-weight: bolder;
+    z-index: 6;
+    
+}
+.services .backend .dised .java{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 5px;
+
+}
+.services .backend .dised #jav{
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.services .backend .dised #jav::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--hoover);
+    width: 0;
+    height: 100%;
+    transition: all 0.76s ease-in-out;
+    z-index: 2;
+}
+.services .backend .dised #jav:hover::after{
+    width: 72%;
+}
+#txt-jv{
+    position: absolute;
+    right: 28%;
+    z-index: 6;
+    font-weight: bolder;
+    z-index: 6;
+    
+}
+.services .backend .dised .python{
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 5px;
+
+}
+.services .backend .dised #pytho{
+    background-color: white;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.services .backend .dised #pytho::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--hoover);
+    width: 0;
+    height: 100%;
+    transition: all 0.76s ease-in-out;
+    z-index: 2;
+}
+.services .backend .dised #pytho:hover::after{
+    width: 62%;
+}
+#txt-py{
+    position: absolute;
+    right: 38%;
+    z-index: 6;
+    font-weight: bolder;
+    z-index: 6;
+    
+}
+/*contact information*/
+.contact{
+    box-shadow: inset 300px 100px 5000px rgba(0, 0, 0, 0.3), inset -10px -10px 5000px rgba(0, 0, 0, 1);
+    background-color: var(--background);
+    color: var(--text-color);
+    position: relative;
+}
+.cont{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    
+
+}
+form{
+    max-width: 50%;
+    margin: 10px auto;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+
+table tr td > label{
+    background-color: black;
+    border: 1px solid var(--hoover);
+    border-radius: 10px;
+    padding: 4px 10px;
+    cursor: pointer;
+    margin-right: 70px;
+    margin-top: 10px;
+    
+}
+#inpts{
+    background-color: transparent; 
+    
+
+    border-bottom: 2px solid gray;
+    outline: none;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    color: var(--text-color);
+}
+
+#text{
+background-color: var(--background);
+color: whitesmoke;
+border: none;
+outline: none;
+border-radius: 20px;
+padding: 25px;
+cursor: pointer;
+box-shadow: 
+   inset 180px 20px 100px rgba(0, 0, 0, 0.3), 
+   inset -5px -10px 50px rgba(0, 0, 0, 1);
+   border: 1px solid var(--hoover);
+
+
+}
+
+
+.butt{
+ text-align: center;
+ 
+}
+.butt button{
+    transition: all 0.54s ease-in-out;
+    margin-top: 20px;
+}
+.butt button:hover{
+    transform: scale(0.8);
+}
+
+.messo{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.displ{
+    display: none;
+}

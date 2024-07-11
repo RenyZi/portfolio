@@ -9,13 +9,12 @@ use PHPMailer\PHPMailer\SMTP;
     if(
         isset($_POST['finame']) && isset($_POST['laname'])
         && isset($_POST['phone']) && isset($_POST['mail'])
-        && isset($_POST['subje']) && isset($_POST['messo'])){
+        && isset($_POST['messo'])){
 
             $firstname = $_POST['finame'];
             $lastname = $_POST['laname'];
             $phone = $_POST['phone'];
             $email = $_POST['mail'];
-            $subject = $_POST['subje'];
             $message = $_POST['messo'];
 
             require_once('PHPMailer/src/Exception.php');
@@ -40,16 +39,15 @@ use PHPMailer\PHPMailer\SMTP;
             $mail->setFrom($email, $firstname." ".$lastname);
             $mail->addAddress('zikireni48@gmail.com');
             $mail->addReplyTo($email);
-            $mail->Subject = $subject;
+            $mail->Subject = "Message Concerning your Portfolio";
             $mail->Body="<h1>Notification from Your Portifolio. Contact:$phone</h1>".$message;
             $mail->AltBody = $message;
             
             $mail->Send();
-            if($email->Send()){
-                return;
+            if($mail->Send()){
+                return "Your message has been sent successfully";
             }
-
-            
+    
             }catch(Exception $e){
                 echo $e;
             }
