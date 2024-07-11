@@ -76,9 +76,6 @@
     <div class="contanier-fluid" style="background-color: #1D212B;">
         <div class="about-me" id="About">
             <div class="about">About Me</div>
-             <div class="imag">
-                <img src="images/reniabout.png" alt="">
-             </div>
              <div class="abt-cont">
                     I'm a young developer. I am persuing my degree in one of the best University in Kenya, the course is degree in Applied Computer Science.
                     I also have skills in other areas not only programming. I'm familiar with Adobe Photoshop Software that is used for editing pictures, Data entry, Virtual Assistance jobs etc. I priotize task given
@@ -95,7 +92,7 @@
         <div class="head-edu">Education</div>
     <div class="container  mt-5 pb-5">
         <div class="row gap-5 justify-content-center">
-            <div class="col-3 bg-dark" style="border-radius: 20px; border-top: 1px solid whitesmoke;">
+            <div class="col-md-3 bg-dark" style="border-radius: 20px; border-top: 1px solid whitesmoke;">
                 <div class="educate">
                     <h2>University Level</h2>
                     <p>
@@ -107,7 +104,7 @@
                     </p>
                 </div><!--end of university div-->
             </div><!--end of col 1-->
-            <div class="col-3 bg-dark" style="border-radius: 20px; border-top: 1px solid whitesmoke;">
+            <div class="col-md-3 bg-dark" style="border-radius: 20px; border-top: 1px solid whitesmoke;">
                 <div class="educate">
                     <h2>High School Level</h2>
                     <p>
@@ -119,7 +116,7 @@
                     </p>
                 </div><!--end of secondary div -->
             </div><!--end of col 2-->
-            <div class="col-3 bg-dark" style="border-radius: 20px;  border-top: 1px solid whitesmoke;">
+            <div class="col-md-3 bg-dark" style="border-radius: 20px;  border-top: 1px solid whitesmoke;">
                 <div class="educate">
                     <h2>Primary Education Level</h2>
                     <p>
@@ -141,7 +138,7 @@
     <div class="service">Services</div>
 
     <div class="row justify-content-center gap-5 mb-4">
-        <div class="col-5 pt-4">
+        <div class="col-md-5 pt-4">
 
             <div class="frontend" id="sersam">
                 <div class="head"><h2>Front End Skills</h2></div>
@@ -167,7 +164,7 @@
 
         </div><!--end of col one-->
 
-        <div class="col-5 pt-4">
+        <div class="col-md-5 pt-4">
             <div class="backend" id="sersam">
                 <div class="head"><h2>Backend Skills</h2></div>
 
@@ -202,33 +199,27 @@
 
 <!--section contacts-->
 <div class="container-fluid contact" id="Contact">
-    <div class="container">
-        <div class="container messo displ">
-            <div class="alert alert-info alert-dismissable" style="width: 600px; display: flex;justify-content: space-between;">
-                <strong>Your message have been sent successfully.</strong>
-                <button class="btn btn-close" data-bs-dismiss="alert" ></button>
-            </div>
-        </div>
+    
     <div class="cont">Contact</div>
-    <div class="container">
+    <div class="container-md">
         <form action="" method="post">
             <table>
                 <tr>
                     <td><label for="fname" class="form-label">First Name</label></td>
-                    <td><input type="text" id="inpts" name="finame"  id="fname" required ></td>
+                    <td><input type="text" class="form-control" id="inpts" name="finame"  id="fname" required ></td>
                 </tr>
                 <tr>
                     <td><label for="lname" class="form-label">Last Name</label></td>
-                    <td><input type="text" id="inpts" name="laname" id="lname" required></td>
+                    <td><input type="text" class="form-control" id="inpts" name="laname" id="lname" required></td>
                 </tr>
             
                 <tr>
                     <td><label for="phon" class="form-label">Phone</label></td>
-                    <td><input type="tel" id="inpts" name="phone" id="phon" required></td>
+                    <td><input type="tel" class="form-control" id="inpts" name="phone" id="phon" required></td>
                 </tr>
                 <tr>
                     <td><label for="email" class="form-label">Email</label></td>
-                    <td><input type="text" id="inpts" name="mail" id="email" required></td>
+                    <td><input type="text" class="form-control" id="inpts" name="mail" id="email" required></td>
                 </tr>
                 
             </table>
@@ -258,18 +249,5 @@
 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
 crossorigin="anonymous"></script>
 
-<script>
-    const message = document.querySelector(".messo");
 
-    const xhhtp = new XMLHttpRequest();
-    xhhtp.onreadystatechange = ()=>{
-    
-        if(this.responseText === 'Your message has been sent successfully'){
-           message.classList.remove("displ");
-        }
-    }
-    xhhtp.open("GET",'reni.php');
-    xhhtp.send();
-
-</script>
 </html>
